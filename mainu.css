@@ -1,0 +1,74 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    background:#0000f9;
+    display:grid;
+    place-items:center center;
+}
+.content img{
+    display:block ;
+    Width:100%;  
+    border-radius:20px 20px 0 0;
+  
+     
+}
+.card{
+    height:100%;
+    padding-bottom:10px;
+    padding-top:20;
+}
+.cards{
+    display:grid;               grid-template-columns:repeat(auto-fit,
+    minmax(300px,1fr));
+    padding:9px;
+    grid-gap:20px;
+    
+}
+.card{
+    background-color:#000;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(0,0,0,0.20);
+    
+}
+.content{
+    position:relative ;
+   clip-path:polygon(0 0,100% 0,100% 85%,0 100%);   
+     
+}
+.text h2{
+    color:white;
+    font-size:15px;
+    padding-left:8px;
+    Padding-top:2px;
+}
+.text p{
+    color:white;
+    font-size:12px;
+    padding-left:13px;
+    Padding-top:1px;
+}
+.content::after{
+    content:'';
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius:20px 20px 0 0;
+    
+}
+.card1>.content::after{
+  background-image:linear-gradient(70deg,
+ #ffff8a8c,rgba(3,169,244,0));
+  }
+  .card2>.content::after{
+  background-image:linear-gradient(20deg,#03a9f4,rgba(3,169,244,0));
+  }
+  .card3>.content::after{
+  background-image:linear-gradient(80deg,#ffed419b,rgba(3,169,244,0));
+  }
